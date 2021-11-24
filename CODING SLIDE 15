@@ -1,0 +1,28 @@
+package selfProgramming;
+
+public class Slide15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i;
+		int j;
+		int k;
+		for(i=1; i<5; i++)
+			System.out.print( i );
+		
+		System.out.println();
+		
+		for(j=1; j<3; j++) {
+			System.out.print("YAHOO" + "" );
+		    System.out.print("***");
+		}
+		System.out.println();
+		
+		for(k=1; k<=5; k++) {
+			System.out.print("YAHOO");
+		    System.out.print("***");
+		}
+
+	}
+
+}
