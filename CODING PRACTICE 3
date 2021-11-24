@@ -1,0 +1,40 @@
+package selfProgramming;
+
+public class Practice3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x=0;
+		int y=1;
+		int z=1;
+		while (y<=20) {
+			System.out.println("y = " + y);
+			x=x+y;
+			y=y+5;
+			System.out.println("x = " + x);
+			System.out.println("z = " + z);
+			z++;
+		}
+		
+		do {
+			System.out.println("y = " + y);
+			x=x+y;
+			y=y+5;
+			System.out.println("x = " + x);
+			System.out.println("z = " + z);
+			z++;
+		}while (y<=20);
+		
+		for(y=1; y<=20; ) {
+			System.out.println("y = " + y);
+			x=x+y;
+			y=y+5;
+			System.out.println("x = " + x);
+			System.out.println("z = " + z);
+			z++;
+			y++;
+		}
+
+	}
+
+}
