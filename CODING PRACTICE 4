@@ -1,0 +1,29 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Practice4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num = (int)(Math.random() * 11);
+		
+		Scanner sc= new Scanner(System.in);
+		int j , i= -1;
+		System.out.println("Ini adalah sistem meneka nombor.");
+		
+		while( i != num) {
+			System.out.println("Masukkan satu nombor antara 1 - 100 ");
+			j=sc.nextInt();
+			if(j==num) {
+				System.out.println("Tahniah!! Nombor Anda Sama.");
+			}
+			else if(j<=num) {
+				System.out.println("Maaf, Nombor anda terlalu rendah.");
+			}
+			else{
+				System.out.println("Maaf, Nombor anda terlalu Tinggi.");
+			}
+		}
+		System.out.println("Random nombor ialah " + num);
+	}
+
+}
