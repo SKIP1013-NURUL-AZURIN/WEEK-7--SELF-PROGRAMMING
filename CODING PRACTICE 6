@@ -1,0 +1,30 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Practice6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int pass1=1357;
+		int passw;
+		int i=1;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your password : ");
+		passw=sc.nextInt();
+		
+		
+	        do {
+	            if (passw!=pass1) {
+	                System.out.println("Wrong password. Enter your password again : ");
+	                passw= sc.nextInt();
+	               
+	            }
+	            else if (passw==pass1) {
+		            System.out.println("Log in success.");
+		           }
+	            i++;
+	            
+	            } while(i<=3); 
+	        
+	            
+	}
+}
