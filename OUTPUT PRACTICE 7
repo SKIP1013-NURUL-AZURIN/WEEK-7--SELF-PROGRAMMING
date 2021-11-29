@@ -1,3 +1,9 @@
 Enter your password : 
 asDCVb12
 Valid password.
+
+Enter your password : 
+12
+The password did not have enough of the following : 
+Upper letters.
+Lower letters.
