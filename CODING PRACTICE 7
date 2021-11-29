@@ -1,0 +1,52 @@
+package selfProgramming;
+import java.util.Scanner;
+class Practice9 {
+
+	public static void main(String[] args) {
+		final int upperLetter = 3;
+		final int lowerLetter = 3;
+		final int num = 2;
+		int upperCount = 0;
+		int lowerCount = 0;
+		int digitCount = 0;
+		int letterCount = 0;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your password : ");
+		
+		String input = sc.nextLine();
+		int inputLen = input.length();
+		
+		for(int i =0; i < inputLen; i++) {
+			char ch = input.charAt(i);
+			if(Character.isUpperCase(ch));
+			    upperCount++;
+			    if (Character.isLowerCase(ch));
+			    lowerCount++;
+			    if (Character.isDigit(ch));
+			    digitCount++;   
+		}
+		
+		if((upperCount >= upperLetter) && (lowerCount >= lowerLetter) && (digitCount >= num ))
+		{
+			System.out.println("Valid password.");	
+		}
+		else {
+			System.out.println("The password did not have enough of the following : ");
+			if(upperCount < upperLetter)
+			{
+				System.out.println("Upper letters.");
+			}
+			if(lowerCount < lowerLetter)
+			{
+				System.out.println("Lower letters.");
+			}
+			if(digitCount < num)
+			{
+				System.out.println("Digits.");
+			}
+		}
+
+	}
+
+}
